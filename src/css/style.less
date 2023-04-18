@@ -1,0 +1,126 @@
+@fonta: "Exo 2", sans-serif;
+@black: rgb(30, 32, 34);
+@black1: rgba(34, 39, 47, 255);
+@black2: rgba(27, 31, 36, 255);
+@white: rgba(241, 241, 241, 254);
+
+body {
+  font-family: @fonta;
+  background-color: @black1;
+  margin: 0px;
+  color: @white;
+}
+
+.pag-cont {
+  min-height: 100vh;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.nav-cont {
+  display: flex;
+  background-color: @black1;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+  img {
+    height: 30px;
+    margin-left: 15px;
+  }
+  ul {
+    margin-top: 10px;
+    margin-right: 20px;
+    display: flex;
+  }
+  li {
+    transition: 0.3s;
+    color: @white;
+    list-style: none;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 23px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+    }
+  }
+  .parent {
+    margin-right: 100px;
+  }
+  .parent:hover > .child-nav:not(:hover) {
+    transition: 0.3s;
+    opacity: 0.5;
+  }
+}
+.cuerpo-hom {
+  width: 600px;
+  border-bottom: 1px dashed rgb(34, 34, 34)
+}
+.home-cont {
+  display: flex;
+  align-items: center;
+  .home-pres-cont {
+    .medio-flecha-home {
+      width: 10px;
+    }
+    .flecha-home {
+      width: 13px;
+    }
+  }
+}
+.footer-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  background-color: rgb(141, 160, 206);
+  height: 120px;
+}
+.redes-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(49, 49, 49);
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  img {
+    width: 30px;
+  }
+  .insta-r:hover {
+    cursor: pointer;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+  }
+  .git-r:hover {
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+  }
+  .mail-r:hover {
+    cursor: pointer;
+    background-color: rgb(199, 22, 16);
+  }
+  .wat-r:hover {
+    cursor: pointer;
+    background-color: #25d366;
+  }
+  .link-r:hover {
+    cursor: pointer;
+    background-color: #0e76a8;
+  }
+}

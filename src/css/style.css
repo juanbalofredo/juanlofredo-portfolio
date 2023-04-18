@@ -1,0 +1,109 @@
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #22272f;
+  margin: 0px;
+  color: #f1f1f1;
+}
+.pag-cont {
+  min-height: 100vh;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.nav-cont {
+  display: flex;
+  background-color: #22272f;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+.nav-cont img {
+  height: 30px;
+  margin-left: 15px;
+}
+.nav-cont ul {
+  margin-top: 10px;
+  margin-right: 20px;
+  display: flex;
+}
+.nav-cont li {
+  transition: 0.3s;
+  color: #f1f1f1;
+  list-style: none;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 23px;
+}
+.nav-cont li:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.nav-cont .parent {
+  margin-right: 100px;
+}
+.nav-cont .parent:hover > .child-nav:not(:hover) {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.cuerpo-hom {
+  width: 600px;
+  border-bottom: 1px dashed #222222;
+}
+.home-cont {
+  display: flex;
+  align-items: center;
+}
+.home-cont .home-pres-cont .medio-flecha-home {
+  width: 10px;
+}
+.home-cont .home-pres-cont .flecha-home {
+  width: 13px;
+}
+.footer-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  background-color: #8da0ce;
+  height: 120px;
+}
+.redes-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.redes-cont div {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  background-color: #313131;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.redes-cont img {
+  width: 30px;
+}
+.redes-cont .insta-r:hover {
+  cursor: pointer;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.redes-cont .git-r:hover {
+  cursor: pointer;
+  background-color: #1a1a1a;
+}
+.redes-cont .mail-r:hover {
+  cursor: pointer;
+  background-color: #c71610;
+}
+.redes-cont .wat-r:hover {
+  cursor: pointer;
+  background-color: #25d366;
+}
+.redes-cont .link-r:hover {
+  cursor: pointer;
+  background-color: #0e76a8;
+}
