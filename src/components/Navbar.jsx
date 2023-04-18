@@ -11,9 +11,8 @@ return(<>
     <img src={foto2}  alt="3" />
     </div>
     <ul className="parent">
-        <li className="child-nav">Home</li>
         <li className="child-nav">About</li>
-        <li className="child-nav">Portafolio</li>
+        <li className="child-nav">Proyectos</li>
         <li className="child-nav">Contacto</li>
     </ul>
 </div>

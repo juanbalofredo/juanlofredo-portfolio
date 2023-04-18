@@ -1,6 +1,6 @@
 @fonta: "Exo 2", sans-serif;
 @black: rgb(30, 32, 34);
-@black1: rgba(34, 39, 47, 255);
+@black1: rgba(20, 31, 38, 255);
 @black2: rgba(27, 31, 36, 255);
 @white: rgba(241, 241, 241, 254);
 
@@ -12,14 +12,16 @@ body {
 }
 
 .pag-cont {
+  background-color: @black2;
   min-height: 100vh;
-  padding-left: 12%;
-  padding-right: 12%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .nav-cont {
+  padding-top: 30px;
   display: flex;
-  background-color: @black1;
+  background-color: @black2;
   justify-content: space-between;
   height: 120px;
   align-items: center;
@@ -52,12 +54,28 @@ body {
     opacity: 0.5;
   }
 }
+.about-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(180, 182, 199);
+  margin-top: 80px;
+  font-size: 16px;
+  div {
+    text-align: justify;
+    width: 75%;
+  }
+}
 .cuerpo-hom {
-  width: 600px;
-  border-bottom: 1px dashed rgb(34, 34, 34)
+  width: 500px;
+  object-fit: contain;
+  border-bottom: 1px dashed rgb(34, 34, 34);
+  border-radius: 100%;
 }
 .home-cont {
+  margin-top: 100px;
   display: flex;
+  justify-content: center;
   align-items: center;
   .home-pres-cont {
     .medio-flecha-home {
@@ -68,13 +86,17 @@ body {
     }
   }
 }
+.este-test {
+  font-size: 20px;
+  color: rgb(150, 152, 165);
+}
 .footer-cont {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 0;
-  width: 80%;
+  width: 76%;
   background-color: rgb(141, 160, 206);
   height: 120px;
 }

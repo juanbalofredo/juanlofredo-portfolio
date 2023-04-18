@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Footer from "./Footer";
+import About from "./About";
 
 
 const Appp = () => {
@@ -11,6 +12,7 @@ const Appp = () => {
       <div className="pag-cont">
       <Navbar />
       <Home/>
+      <About/>
       <Footer/>
       </div>
     </>
