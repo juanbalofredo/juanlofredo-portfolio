@@ -1,41 +1,47 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React, { useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import foto1 from "../Img/5.png";
-import foto2 from "../Img/6.png";
-import foto3 from "../Img/7.png";
-import cara from "../Img/222.png"
+import cara from "../Img/quesopapo2.png"
+import { useTranslation } from "react-i18next";
+import Typed from "typed.js";
+
 
 const Home = () => {
   AOS.init({
     duration: 1000,
   });
+  const [t,i18n] = useTranslation("global");
 
+
+  const el = useRef(null);
+  useEffect(()=>{
+    const typed = new Typed(el.current, {
+      strings: ['Full-stack Developer','Desarrollador Web','Web Developer',"Desarrollador Full-stack"],
+      startDelay:300,
+      typeSpeed: 150,
+      backDelay: 1000,
+      backSpeed: 100,
+      smartBackspace:true,
+      showCursor:true,
+      loop:true,
+    });
+  })
   return (
     <>
       <div className="home-cont">
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          className="cuerpo-hom"
+          src={cara}
+          alt=""
+        />
         <div className="home-pres-cont">
-          <h1>Soy Juan Bautista Lofredo</h1>
-          <img
-            className="flecha-home"
-            src={foto1}
-            alt=""
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-offset="100"
-          />
-          <img className="medio-flecha-home" src={foto2} alt="" />
-          <img
-            className="flecha-home"
-            src={foto3}
-            alt=""
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-offset="100"
-          />
+          <h1>Juan Lofredo</h1>
+          <h2><span ref={el}></span></h2>
+          <h3 className="este-test">Buenos Aires, Argentina</h3>
         </div>
-        <img className="cuerpo-hom" src={cara} alt="" />
       </div>
     </>
   );

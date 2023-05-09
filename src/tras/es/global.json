@@ -1,0 +1,34 @@
+{
+  "form": {
+    "h1": "Ponete en contacto conmigo!",
+    "mail": "Correo",
+    "theme": "Asunto",
+    "msg": "Mensaje",
+    "btn": "ENVIAR"
+  },
+  "nav": {
+    "sob": "Sobre Mí",
+    "proy": "Proyectos",
+    "cont": "Contacto"
+  },
+  "footer": {
+    "cop1": "Derechos de autor "
+  },
+  "cuerpo": {
+    "full": "Desarrollador Full stack"
+  },
+  "about": {
+    "sobre": "Sobre mí",
+    "text": "Hola, soy Juan Bautista Lofredo, tengo 20 años y soy de Buenos Aires, Argentina. Desde que comencé mi viaje como diseñador independiente hace más de 2 años, he realizado trabajos remotos para agencias y colaborado con personas talentosas para crear productos digitales para uso comercial y de consumo. Soy tranquilamente confiado, naturalmente curioso y trabajo perpetuamente para mejorar mis habilidades, un problema de diseño a la vez.",
+    "hab": "Habilidad",
+    "con": "Conocimiento",
+    "exp": "Experiencia ",
+    "yea": "años",
+    "yeas": "año"
+  },
+  "proyes": {
+    "tit": "Proyectos",
+    "bols": "Bolsillo Feliz es una aplicacion web en la que se puede comparar los precios de los productos en diferentes supermercados.",
+    "con": "Una aplicacion web en la que se puede ver todos los paises y otorgarles o ver las ya otorgadas actividades que se pueden realizar."
+  }
+}
