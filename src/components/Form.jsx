@@ -1,11 +1,22 @@
 import { useTranslation } from "react-i18next";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2'
 
 const Form = () => {
   const form = useRef();
 
+  const [input, setInput] = useState({
+    message: "",
+    user_mail: ""
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInput({
+      ...input,
+      [name]: value,
+    });
+  };
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -23,7 +34,11 @@ const Form = () => {
               text: 'Mensaje enviado correctamente',
               icon: 'success',
               confirmButtonText: 'OK'
-            })
+            });
+            setInput({
+              message: "",
+              user_mail: ""
+            });
           }
         },
         (error) => {
@@ -40,11 +55,11 @@ const Form = () => {
         <div class="login-box">
           <form ref={form} onSubmit={sendEmail}>
             <div class="user-box">
-              <input required type="email" name="user_mail" />
+              <input required type="email" name="user_mail" value={input.user_mail}  onChange={handleChange} />
               <label>{t("form.mail")}</label>
             </div>
             <div class="user-box">
-              <textarea type="mensaje" name="message" required id="mensaje" />
+              <textarea type="mensaje" name="message" required id="mensaje" value={input.message}  onChange={handleChange} />
               <label>{t("form.msg")}</label>
             </div>
             <center>

@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   audi: "ES",
-  darkMode: "off",
+  darkMode: "on",
 };
 
 export const bolsilloPersist = createSlice({
