@@ -1,1 +1,253 @@
-@black: rgba(23,24,16,255);
+@desktop: ~"only screen and (min-width: 1401px) and (max-width: 1000000px)";
+@tablet: ~"only screen and (min-width: 1000px) and (max-width: 1400px)";
+@bigMobile: ~"only screen and (min-width: 701px) and (max-width: 999px)";
+@mobile: ~"only screen and (min-width: 0px) and (max-width: 700px)";
+@black: rgba(23, 24, 16, 255);
+
+@media @tablet, @desktop {
+  .topbar {
+    display: none;
+    visibility: hidden;
+  }
+  .home-pres-cont {
+    h1 {
+      font-size: 80px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      margin: 0;
+      font-size: 30px;
+      color: rgb(150, 152, 165);
+    }
+  }
+}
+@media @mobile, @bigMobile {
+  .redes-cont {
+    div {
+      width: 10vw;
+    }
+  }
+  .tec-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .tecnos2{
+      margin-left: 7vw;
+    }
+    .tecnos2,
+    .tecnos {
+      div {
+        width: 8vw;
+        height: 8vw;
+        img {
+          width: 4vw;
+        }
+      }
+    }
+  }
+  .bolsillo,
+  .paises {
+    div,
+    img {
+      width: 40%;
+    }
+  }
+  .proyes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .abot-cont {
+    h2 {
+      font-size: 10vw;
+      margin-bottom: 100px;
+      margin-top: 340px;
+    }
+    table {
+      margin-top: 5vw;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+  }
+  .about-cont {
+    display: flex;
+    flex-direction: column;
+    div {
+      width: 80vw;
+      height: 500px;
+      margin: 0;
+      padding: 0;
+      font-size: 4vw;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .home-pres-cont {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 10vw;
+      margin: 0;
+    }
+    h2 {
+      font-size: 6vw;
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 5vw;
+      margin: 0;
+      color: rgb(150, 152, 165);
+    }
+  }
+  .home-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 0;
+      width: 70%;
+    }
+  }
+  .pag-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .nav-cont {
+    display: none;
+    visibility: hidden;
+  }
+  .qasa {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container {
+    position: relative;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+  .topbar {
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    height: 70px;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    list-style: none;
+    opacity: 0;
+    font-size: 3.5rem;
+    background-color: rgb(29, 49, 92);
+    transform: translateX(10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+    padding: 0;
+    padding-top: 100px;
+  }
+
+  .menu-items li {
+    margin-top: 50px;
+    color: white;
+  }
+
+  .menu-items li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu-items li a:hover {
+    color: rgb(174, 174, 174);
+  }
+
+  .check {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    height: 5rem;
+    width: 6rem;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .check:hover {
+    cursor: pointer;
+  }
+
+  .check:checked ~ .menu-items {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .ham-menu {
+    height: 5rem;
+    width: 6rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .ham-menu .line {
+    background-color: white;
+    border-radius: 1em;
+    width: 4rem;
+    height: 0.5rem;
+  }
+
+  .ham-menu .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 100ms ease-in-out;
+  }
+
+  .ham-menu .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 100ms ease-in-out;
+  }
+
+  .check:checked ~ .ham-menu .line1 {
+    display: block;
+    transform: rotate(45deg);
+  }
+
+  .check:checked ~ .ham-menu .line2 {
+    opacity: 0;
+  }
+
+  .check:checked ~ .ham-menu .line3 {
+    display: block;
+    transform: rotate(-45deg);
+  }
+  body,
+  html {
+    min-height: 100vh;
+    width: 100%;
+  }
+}

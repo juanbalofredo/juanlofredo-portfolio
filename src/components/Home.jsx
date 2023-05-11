@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import cara from "../Img/quesopapo2.png"
-import { useTranslation } from "react-i18next";
 import Typed from "typed.js";
 
 
@@ -10,12 +9,12 @@ const Home = () => {
   AOS.init({
     duration: 1000,
   });
-  const [t,i18n] = useTranslation("global");
+
 
 
   const el = useRef(null);
   useEffect(()=>{
-    const typed = new Typed(el.current, {
+    new Typed(el.current, {
       strings: ['Full-stack Developer','Desarrollador Web','Web Developer',"Desarrollador Full-stack"],
       startDelay:300,
       typeSpeed: 150,

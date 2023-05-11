@@ -10,7 +10,7 @@ const Proyectos = () => {
   AOS.init({
     duration: 1000,
   });
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
     <>
       <div className="proy-cont">
