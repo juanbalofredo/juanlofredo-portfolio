@@ -24,17 +24,17 @@ const Proyectos = () => {
               <img src={bolsillo} alt="bolsillo" />
             </div>
           </a>
-          <div className="paises">
-            <a
-              href="https://www.youtube.com/watch?v=R_cjEpVWbcs&ab_channel=JuanLofredo"
-              target="blank"
-            >
+          <a
+            href="https://www.youtube.com/watch?v=R_cjEpVWbcs&ab_channel=JuanLofredo"
+            target="blank"
+          >
+            <div className="paises">
               <img src={paises} alt="paises" />
               <div>
                 <p>{t("proyes.con")}</p>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
         <Tecnologias />
       </div>

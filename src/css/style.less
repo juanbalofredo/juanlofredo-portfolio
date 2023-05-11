@@ -170,7 +170,6 @@ input:checked + .slider1:before {
   justify-content: center;
   align-items: center;
   .home-pres-cont {
-
     .medio-flecha-home {
       width: 10px;
     }
@@ -391,13 +390,13 @@ input:checked + .slider1:before {
       }
     }
     .se-r {
-      background-color: #EFEFEF;
+      background-color: #efefef;
       &:hover {
         h5 {
           visibility: visible;
         }
         cursor: pointer;
-        box-shadow: 0px 0px 10px 1px #EFEFEF;
+        box-shadow: 0px 0px 10px 1px #efefef;
       }
     }
     .pyt-r {
@@ -681,31 +680,20 @@ label:last-child span {
 }
 
 body.bodyDark {
-
-  font-family: @fonta;
   background-image: url("../Img/svg2.svg");
   background-size: cover;
-  margin: 0px;
-  min-height: 100%;
-  position: relative;
   color: rgb(15, 19, 22);
-  ::-webkit-scrollbar {
-    display: none;
-  }
   table {
     color: rgb(15, 19, 22);
   }
   td {
     h4 {
       color: rgb(15, 19, 22);
-      font-size: 20px;
-      font-weight: 800;
     }
   }
   .home-pres-cont {
     h3 {
       color: rgb(15, 19, 22);
-      font-weight: 400;
     }
   }
   .abot-cont {
@@ -716,11 +704,9 @@ body.bodyDark {
   .nav-cont {
     li {
       color: rgb(15, 19, 22);
-
     }
 
     a {
-      font-weight: 700;
       color: rgb(15, 19, 22);
     }
   }
@@ -733,16 +719,12 @@ body.bodyDark {
     h5 {
       transition: 1s;
       color: rgb(15, 19, 22);
-      font-size: 13px;
-      font-weight: 800;
     }
   }
-  .button{
-    a{
-      font-weight: 300;
-          color: white;
+  .button {
+    a {
+      color: white;
     }
-
   }
 }
 
@@ -768,10 +750,10 @@ body.bodyDark {
   position: relative;
 }
 
-.login-box .user-box input, .login-box .user-box textarea {
+.login-box .user-box input,
+.login-box .user-box textarea {
   width: 100%;
   padding: 10px 0;
-  font-size: 16px;
   color: #fff;
   margin-bottom: 30px;
   border: none;
@@ -792,13 +774,12 @@ body.bodyDark {
 }
 
 .login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid  ~ label,
+.login-box .user-box input:valid ~ label,
 .login-box .user-box textarea:focus ~ label,
-.login-box .user-box textarea:valid  ~ label {
+.login-box .user-box textarea:valid ~ label {
   top: -20px;
   left: 0;
   color: #bdb8b8;
-  font-size: 12px;
 }
 
 .login-box form button {
@@ -806,7 +787,6 @@ body.bodyDark {
   display: inline-block;
   padding: 10px 20px;
   color: #ffffff;
-  font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -826,8 +806,8 @@ body.bodyDark {
   background-size: 400%;
   color: #fff;
   border: none;
-  a{
-    text-decoration: none; 
+  a {
+    text-decoration: none;
     color: #fff;
   }
 }
@@ -842,7 +822,7 @@ body.bodyDark {
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -895,17 +875,15 @@ body.bodyDark {
 #mensaje {
   margin-top: 10px;
   resize: none;
-  text-overflow:clip;
+  text-overflow: clip;
   height: 130px;
 }
-.form-cont{
+.form-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h3{
-    font-size: 30px;
-    font-weight: 700;
+  h3 {
     margin-bottom: 600px;
   }
 }

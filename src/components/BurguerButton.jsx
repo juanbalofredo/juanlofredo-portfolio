@@ -36,10 +36,7 @@ const BurguerButton = () => {
         <ul className="menu-items">
           <li className="child-nav">
             {" "}
-            <a href="/#sobremi">Sobre mi</a>
-          </li>
-          <li className="child-nav">
-            <a href="/#proyets">Proyectos</a>
+            <a href="/#sobremi">Sobre mí</a>
           </li>
           <li className="child-nav">
             <a href="/contacto">Contacto</a>
