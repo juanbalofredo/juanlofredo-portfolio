@@ -4,12 +4,13 @@ import Home from "./Home";
 import Footer from "./Footer";
 import About from "./About";
 import BurguerButton from "./BurguerButton";
-
+import { Analytics } from "@vercel/analytics/react";
 import Proyectos from "./Proyectos";
 
 const Appp = () => {
   return (
     <>
+      <Analytics />
       <div className="topbar">
         <BurguerButton />
       </div>
