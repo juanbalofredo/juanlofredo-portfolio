@@ -18,7 +18,7 @@
 @media only screen and (min-width: 0px) and (max-width: 700px), only screen and (min-width: 701px) and (max-width: 999px) {
   .login-box {
     width: 80vw;
-    height: 50vh;
+    height: 60vh;
   }
   .redes-cont div {
     width: 10vw;
@@ -50,7 +50,7 @@
     width: 40vw;
   }
   .proy-cont {
-    margin-top: 60vw;
+    margin-top: 80vh;
     padding-bottom: 50vw;
   }
   .tec-cont {
@@ -60,7 +60,7 @@
     justify-content: center;
     height: 160vh;
     width: 100%;
-    margin-bottom: 50vh;
+    margin-bottom: 75vh;
   }
   .tec-cont .tecnos,
   .tec-cont .tecnos2 {
