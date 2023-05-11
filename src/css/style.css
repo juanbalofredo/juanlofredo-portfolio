@@ -14,8 +14,8 @@ body ::-webkit-scrollbar {
   display: none;
 }
 .pag-cont {
-  margin-left: 12%;
-  margin-right: 12%;
+  margin-left: 6%;
+  margin-right: 6%;
   padding-bottom: 100px;
 }
 /* The switch - the box around the slider */
@@ -96,14 +96,15 @@ input:checked + .slider1:before {
   transform: scale(1.01);
 }
 .nav-cont .parent {
-  margin-left: 30%;
+  margin-left: 5vw;
   margin-right: 5%;
-  width: 30%;
+  width: 40vw;
 }
 .nav-cont .parent a {
   text-decoration: none;
   color: white;
   width: 30%;
+  font-size: 2vw;
 }
 .nav-cont .parent:hover > .child-nav:not(:hover) {
   transition: 0.3s;
@@ -138,14 +139,14 @@ input:checked + .slider1:before {
   justify-content: center;
   margin-bottom: 40px;
   height: 60vh;
-  font-size: 24px;
+  font-size: 1.5vw;
 }
 .about-cont div {
   text-align: justify;
   width: 40%;
 }
 .cuerpo-hom {
-  width: 500px;
+  width: 30vw;
   object-fit: contain;
   margin-right: 200px;
 }
@@ -425,13 +426,13 @@ input:checked + .slider1:before {
   font-weight: 800;
   z-index: 1;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1vw;
   margin-left: 10%;
 }
 .proyes .paises div {
   z-index: -1;
-  height: 203px;
-  width: 300px;
+  height: 12vw;
+  width: 25vw;
   background-color: #1b2e41;
   position: relative;
   right: 40px;
@@ -439,12 +440,18 @@ input:checked + .slider1:before {
   transform: translateX(-256px);
   visibility: hidden;
 }
+.proyes .paises {
+  margin-left: 2vw;
+}
 .proyes .paises:hover {
   cursor: pointer;
 }
 .proyes .paises:hover div {
   visibility: visible;
   transform: translateX(0);
+}
+.proyes .bolsillo {
+  margin-right: 2vw;
 }
 .proyes .bolsillo:hover {
   cursor: pointer;
@@ -466,15 +473,15 @@ input:checked + .slider1:before {
   font-weight: 800;
   z-index: 1;
   color: black;
-  font-size: 15px;
+  font-size: 1vw;
   margin-right: 10%;
 }
 .proyes .bolsillo div {
   display: flex;
   flex-direction: column;
   color: black;
-  height: 203px;
-  width: 300px;
+  width: 25vw;
+  height: 12vw;
   background-color: #f8e6e8;
   position: relative;
   left: 40px;
@@ -498,7 +505,7 @@ input:checked + .slider1:before {
 }
 .proyes div img {
   transition: filter 0.5s ease-in-out;
-  width: 500px;
+  width: 25vw;
   max-width: 400px;
   border-radius: 20px;
 }
@@ -714,6 +721,9 @@ body.bodyDark .button a {
   left: 0;
   color: #bdb8b8;
 }
+.nav-img {
+  display: flex;
+}
 .login-box form button {
   position: relative;
   display: inline-block;
@@ -731,13 +741,14 @@ body.bodyDark .button a {
 .button {
   position: relative;
   overflow: hidden;
-  height: 3.4rem;
+  height: 4rem;
   padding: 0 2rem;
   border-radius: 1.5rem;
   background: #374151;
   background-size: 400%;
   color: #fff;
   border: none;
+  margin-left: 2vw;
 }
 .button a {
   text-decoration: none;
