@@ -5,10 +5,11 @@ import Form from "./Form";
 import BurguerButton from "./BurguerButton";
 import foto1 from "../Img/4.png";
 import foto2 from "../Img/1.png";
-
+import { Analytics } from "@vercel/analytics/react";
 const Contacto = () => {
   return (
     <>
+      <Analytics />
       <div className="topbar">
         <div className="nav-img">
           <img src={foto2} alt="3" />
