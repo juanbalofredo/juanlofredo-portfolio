@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  background-color: #00142b;
   font-family: "Exo 2", sans-serif;
   background-image: url("../Img/svg.svg");
   background-size: cover;
@@ -639,6 +640,7 @@ label:last-child span {
   cursor: pointer;
 }
 body.bodyDark {
+  background-color: #5baceb;
   background-image: url("../Img/svg2.svg");
   background-size: cover;
   color: #0f1316;
