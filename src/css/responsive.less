@@ -5,6 +5,10 @@
 @black: rgba(23, 24, 16, 255);
 
 @media @tablet, @desktop {
+  .flecha1,
+  .flecha2 {
+    display: none;
+  }
   .topbar {
     display: none;
     visibility: hidden;
@@ -24,8 +28,18 @@
   }
 }
 
-
 @media @mobile, @bigMobile {
+  .nav-img {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    img {
+      position: fixed;
+      height: 30px;
+      top: 3rem;
+      left: 10rem;
+    }
+  }
   .login-box {
     width: 80vw;
     height: 60vh;
@@ -57,7 +71,6 @@
   }
   .proyes a div {
     margin-bottom: 10vh;
-
     img {
       display: none;
       width: 40vw;
@@ -171,6 +184,27 @@
       margin: 0;
       width: 70%;
     }
+
+    .flecha1,
+    .flecha2 {
+      width: 15%;
+      transition: all 1s;
+      animation: animate 3s ease 0.1s infinite;
+    }
+    @keyframes animate {
+      0% {
+        transform: translate(0em, 1em);
+      }
+      50% {
+        transform: translate(0em, 6em);
+      }
+      100% {
+        transform: translate(0em, 1em);
+      }
+    }
+    .flecha1 {
+      margin-top: 10vh;
+    }
   }
   .pag-cont {
     display: flex;
@@ -203,7 +237,8 @@
     position: fixed;
     z-index: 3;
     top: 0;
-    height: 70px;
+    height: 90px;
+    background-color: #001c33;
   }
 
   .menu-items {
@@ -325,10 +360,13 @@
   }
   .form-cont h3 {
     text-align: center;
-    margin-bottom: 20vh;
+    margin-bottom: 25vh;
   }
 
   body.bodyDark {
+    .topbar {
+      background-color: #0075a3;
+    }
     .menu-items {
       background: #1fcff8;
       background: -moz-linear-gradient(

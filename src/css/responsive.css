@@ -1,4 +1,8 @@
 @media only screen and (min-width: 1000px) and (max-width: 1400px), only screen and (min-width: 1401px) and (max-width: 1000000px) {
+  .flecha1,
+  .flecha2 {
+    display: none;
+  }
   .topbar {
     display: none;
     visibility: hidden;
@@ -16,6 +20,17 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 700px), only screen and (min-width: 701px) and (max-width: 999px) {
+  .nav-img {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+  }
+  .nav-img img {
+    position: fixed;
+    height: 30px;
+    top: 3rem;
+    left: 10rem;
+  }
   .login-box {
     width: 80vw;
     height: 60vh;
@@ -151,6 +166,26 @@
     margin: 0;
     width: 70%;
   }
+  .home-cont .flecha1,
+  .home-cont .flecha2 {
+    width: 15%;
+    transition: all 1s;
+    animation: animate 3s ease 0.1s infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: translate(0em, 1em);
+    }
+    50% {
+      transform: translate(0em, 6em);
+    }
+    100% {
+      transform: translate(0em, 1em);
+    }
+  }
+  .home-cont .flecha1 {
+    margin-top: 10vh;
+  }
   .pag-cont {
     display: flex;
     flex-direction: column;
@@ -181,7 +216,8 @@
     position: fixed;
     z-index: 3;
     top: 0;
-    height: 70px;
+    height: 90px;
+    background-color: #001c33;
   }
   .menu-items {
     display: none;
@@ -274,7 +310,10 @@
   }
   .form-cont h3 {
     text-align: center;
-    margin-bottom: 20vh;
+    margin-bottom: 25vh;
+  }
+  body.bodyDark .topbar {
+    background-color: #0075a3;
   }
   body.bodyDark .menu-items {
     background: #1fcff8;

@@ -3,8 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import cara from "../Img/quesopapo2.png"
 import Typed from "typed.js";
-
-
+import flecha from '../Img/32195.png'
+import flechab from '../Img/nalcnasas.png'
 const Home = () => {
   AOS.init({
     duration: 1000,
@@ -41,6 +41,8 @@ const Home = () => {
           <h2><span ref={el}></span></h2>
           <h3 className="este-test">Buenos Aires, Argentina</h3>
         </div>
+        <img src={flechab} alt="flecha" className="flecha1" />
+        <img src={flechab} alt="flecha" className="flecha2" />
       </div>
     </>
   );
