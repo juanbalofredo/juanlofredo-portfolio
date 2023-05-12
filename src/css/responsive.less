@@ -246,49 +246,63 @@
     flex-direction: column;
     position: fixed;
     height: 100vh;
-    width: 100vw;
+    width: 60vw;
+    margin-left: 40vw;
     list-style: none;
     opacity: 0;
-    font-size: 4rem;
-    background: #001220;
-    background: -moz-linear-gradient(
-      top,
-      #001220 0%,
-      #002e53 50%,
-      #004e8b 100%
-    );
-    background: -webkit-linear-gradient(
-      top,
-      #001220 0%,
-      #002e53 50%,
-      #004e8b 100%
-    );
-    background: linear-gradient(
-      to bottom,
-      #001220 0%,
-      #002e53 50%,
-      #004e8b 100%
-    );
-    transform: translateX(10%);
+    font-size: 2rem;
+    background: #001c33;
+    transform: trgb(1, 33, 58) eX(10%);
     transition: transform 300ms ease-in-out, opacity 200ms;
     padding: 0;
     padding-top: 100px;
-    padding-left: 20vw;
   }
-
   .menu-items li {
-    margin-top: 50px;
+    height: 10vh;
     color: white;
+    border-bottom: 2px solid #00325c;
+    padding-left: 6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    &:hover{
+      cursor: pointer;
+      background-color: #00325c;
+    }
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   .menu-items li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
     color: white;
     text-decoration: none;
   }
-
-  .menu-items li a:hover {
-    color: rgb(174, 174, 174);
+  .menu-items li a {
+    display: flex;
+    align-items: center;
+    &:hover{
+      opacity: 1;
+    }
+    img {
+      width: 5vh;
+      margin-right: 8vw;
+    }
   }
+  .menu-items li div img {
+    width: 4.5vh;
+    margin-left: 10vw;
+    margin-right: 8vw;
+  }
+
 
   .check {
     position: fixed;
@@ -364,32 +378,38 @@
   }
 
   body.bodyDark {
+    .flecha1,
+    .flecha2 {
+      content: url("../Img/32195.png");
+    }
     .topbar {
       background-color: #0075a3;
     }
     .menu-items {
-      background: #1fcff8;
-      background: -moz-linear-gradient(
-        top,
-        #1fcff8 0%,
-        #1694b1 50%,
-        #082d62 100%
-      );
-      background: -webkit-linear-gradient(
-        top,
-        #1fcff8 0%,
-        #1694b1 50%,
-        #082d62 100%
-      );
-      background: linear-gradient(
-        to bottom,
-        #1fcff8 0%,
-        #1694b1 50%,
-        #082d62 100%
-      );
+      background: #0075a3;
+      li {
+        border-bottom: 1px solid rgb(82, 146, 202);
+        &:hover{
+          cursor: pointer;
+          background-color:#055d80;
+        }
+      }
       li a {
         color: black;
       }
+
     }
+    .menu-items li:first-child img{
+       content: url('../Img/hamb/cuenta.png');
+    }
+    .menu-items li:nth-child(2) img{
+      content: url('../Img/hamb/carta.png');
+   }
+   .menu-items li:nth-child(3) img{
+    content: url('../Img/hamb/cv.png');
+ }
+ .menu-items li:nth-child(4) img{
+  content: url('../Img/hamb/niveles-de-monitorizacion.png');
+}
   }
 }

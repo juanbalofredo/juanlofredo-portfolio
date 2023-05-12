@@ -224,30 +224,60 @@
     flex-direction: column;
     position: fixed;
     height: 100vh;
-    width: 100vw;
+    width: 60vw;
+    margin-left: 40vw;
     list-style: none;
     opacity: 0;
-    font-size: 4rem;
-    background: #001220;
-    background: -moz-linear-gradient(top, #001220 0%, #002e53 50%, #004e8b 100%);
-    background: -webkit-linear-gradient(top, #001220 0%, #002e53 50%, #004e8b 100%);
-    background: linear-gradient(to bottom, #001220 0%, #002e53 50%, #004e8b 100%);
-    transform: translateX(10%);
+    font-size: 2rem;
+    background: #001c33;
+    transform: trgb(1, 33, 58) eX(10%);
     transition: transform 300ms ease-in-out, opacity 200ms;
     padding: 0;
     padding-top: 100px;
-    padding-left: 20vw;
   }
   .menu-items li {
-    margin-top: 50px;
+    height: 10vh;
     color: white;
+    border-bottom: 2px solid #00325c;
+    padding-left: 6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+  .menu-items li:hover {
+    cursor: pointer;
+    background-color: #00325c;
   }
   .menu-items li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .menu-items li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
     color: white;
     text-decoration: none;
   }
+  .menu-items li a {
+    display: flex;
+    align-items: center;
+  }
   .menu-items li a:hover {
-    color: #aeaeae;
+    opacity: 1;
+  }
+  .menu-items li a img {
+    width: 5vh;
+    margin-right: 8vw;
+  }
+  .menu-items li div img {
+    width: 4.5vh;
+    margin-left: 10vw;
+    margin-right: 8vw;
   }
   .check {
     position: fixed;
@@ -312,16 +342,36 @@
     text-align: center;
     margin-bottom: 25vh;
   }
+  body.bodyDark .flecha1,
+  body.bodyDark .flecha2 {
+    content: url("../Img/32195.png");
+  }
   body.bodyDark .topbar {
     background-color: #0075a3;
   }
   body.bodyDark .menu-items {
-    background: #1fcff8;
-    background: -moz-linear-gradient(top, #1fcff8 0%, #1694b1 50%, #082d62 100%);
-    background: -webkit-linear-gradient(top, #1fcff8 0%, #1694b1 50%, #082d62 100%);
-    background: linear-gradient(to bottom, #1fcff8 0%, #1694b1 50%, #082d62 100%);
+    background: #0075a3;
+  }
+  body.bodyDark .menu-items li {
+    border-bottom: 1px solid #5292ca;
+  }
+  body.bodyDark .menu-items li:hover {
+    cursor: pointer;
+    background-color: #055d80;
   }
   body.bodyDark .menu-items li a {
     color: black;
+  }
+  body.bodyDark .menu-items li:first-child img {
+    content: url('../Img/hamb/cuenta.png');
+  }
+  body.bodyDark .menu-items li:nth-child(2) img {
+    content: url('../Img/hamb/carta.png');
+  }
+  body.bodyDark .menu-items li:nth-child(3) img {
+    content: url('../Img/hamb/cv.png');
+  }
+  body.bodyDark .menu-items li:nth-child(4) img {
+    content: url('../Img/hamb/niveles-de-monitorizacion.png');
   }
 }

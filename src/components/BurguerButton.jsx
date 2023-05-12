@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-import foto1 from "../Img/4.png";
-import foto2 from "../Img/1.png";
 import { changeTheme } from "../redux/persistSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useTranslation } from "react-i18next";
 import cv from "../Img/Cv.pdf";
-
+import darkb from "../Img/hamb/dark.png";
+import currib from "../Img/hamb/ccvblanco.png";
+import sobb from "../Img/hamb/perlanca.png";
+import conb from "../Img/hamb/cartablanca.png";
 const BurguerButton = () => {
-  const [t] = useTranslation("global");
   const dispatch = useDispatch();
   const state = useSelector((state) => state.bolsilloPersist);
   useEffect(
@@ -36,19 +35,28 @@ const BurguerButton = () => {
         <ul className="menu-items">
           <li className="child-nav">
             {" "}
-            <a href="/#sobremi">Sobre mí</a>
+            <a href="/#sobremi">
+              <img src={sobb} alt="" /> Sobre mí
+            </a>
           </li>
           <li className="child-nav">
-            <a href="/contacto">Contacto</a>
+            <a href="/contacto">
+              <img src={conb} alt="" />
+              Contacto
+            </a>
           </li>
           <li>
             {" "}
             <span className="button-content">
-              <a href={cv}>Descargar CV</a>{" "}
+              <a href={cv}>
+                <img src={currib} alt="" />
+                Descargar CV
+              </a>{" "}
             </span>
           </li>
           <li>
             <div className="qasa">
+              <img src={darkb} alt="" />
               <label>
                 <input
                   className="toggle-checkbox"
