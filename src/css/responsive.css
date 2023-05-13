@@ -162,9 +162,10 @@
     justify-content: center;
     align-items: center;
   }
-  .home-cont img {
+  .home-cont .cuerpo-hom.aos-init.aos-animate {
     margin: 0;
     width: 70%;
+    margin-top: 90px ;
   }
   .home-cont .flecha1,
   .home-cont .flecha2 {
