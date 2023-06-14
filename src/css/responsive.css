@@ -351,14 +351,14 @@
     background-color: #0075a3;
   }
   body.bodyDark .menu-items {
-    background: #0075a3;
+    background: #e6f8ff;
   }
   body.bodyDark .menu-items li {
-    border-bottom: 1px solid #5292ca;
+    border-bottom: 1px solid #d3d3d3;
   }
   body.bodyDark .menu-items li:hover {
     cursor: pointer;
-    background-color: #055d80;
+    background-color: #9dabb1;
   }
   body.bodyDark .menu-items li a {
     color: black;

@@ -34,13 +34,13 @@ const Tecnologias = () => {
               src={react}
               alt="react"
               data-aos="flip-up"
-              data-aos-delay="2400"
+              data-aos-delay="1000"
             />
           </div>
           <div className="js-r">
             {" "}
             <h5>JavaScript</h5>
-            <img src={js} alt="js" data-aos="flip-up" data-aos-delay="1600" />
+            <img src={js} alt="js" data-aos="flip-up" data-aos-delay="1000" />
           </div>
           <div className="node-r">
             {" "}
@@ -49,7 +49,7 @@ const Tecnologias = () => {
               src={node}
               alt="node"
               data-aos="flip-up"
-              data-aos-delay="800"
+              data-aos-delay="1000"
             />
           </div>
           <div className="post-r">
@@ -59,18 +59,18 @@ const Tecnologias = () => {
               src={post}
               alt="post"
               data-aos="flip-up"
-              data-aos-delay="800"
+              data-aos-delay="1200"
             />
           </div>
           <div className="ht-r">
             {" "}
             <h5>HTML</h5>
-            <img src={ht} alt="ht" data-aos="flip-up" data-aos-delay="1600" />
+            <img src={ht} alt="ht" data-aos="flip-up" data-aos-delay="1200" />
           </div>
           <div className="css-r">
             {" "}
             <h5>CSS</h5>
-            <img src={css} alt="css" data-aos="flip-up" data-aos-delay="2400" />
+            <img src={css} alt="css" data-aos="flip-up" data-aos-delay="1200" />
           </div>
         </div>
         <div className="tecnos2">
@@ -79,7 +79,7 @@ const Tecnologias = () => {
               src={express}
               alt="express"
               data-aos="flip-up"
-              data-aos-delay="2000"
+              data-aos-delay="1400"
             />
             <h5>Express JS</h5>
           </div>
@@ -88,7 +88,7 @@ const Tecnologias = () => {
               src={cloud}
               alt="cloud"
               data-aos="flip-up"
-              data-aos-delay="1200"
+              data-aos-delay="1400"
             />
             <h5>Cloudinary</h5>
           </div>
@@ -97,7 +97,7 @@ const Tecnologias = () => {
               src={redux}
               alt="redux"
               data-aos="flip-up"
-              data-aos-delay="400"
+              data-aos-delay="1400"
             />
             <h5>Redux</h5>
           </div>
@@ -106,16 +106,16 @@ const Tecnologias = () => {
               src={fire}
               alt="fire"
               data-aos="flip-up"
-              data-aos-delay="1200"
+              data-aos-delay="1600"
             />
             <h5>FireBase</h5>
           </div>
           <div className="pyt-r">
-            <img src={pyt} alt="pyt" data-aos="flip-up" data-aos-delay="2000" />
+            <img src={pyt} alt="pyt" data-aos="flip-up" data-aos-delay="1600" />
             <h5>Python</h5>
           </div>
           <div className="se-r">
-            <img src={se} alt="se" data-aos="flip-up" data-aos-delay="2800" />
+            <img src={se} alt="se" data-aos="flip-up" data-aos-delay="1600" />
             <h5>Sequelize</h5>
           </div>
         </div>

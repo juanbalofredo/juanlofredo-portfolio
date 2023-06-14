@@ -4,7 +4,7 @@ import foto2 from "../Img/1.png";
 import { changeTheme } from "../redux/persistSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
-import cv from "../Img/Cv.pdf";
+import cv from "../Img/CV2.pdf";
 
 const Navbar = () => {
   const [t] = useTranslation("global");
@@ -101,7 +101,7 @@ const Navbar = () => {
 
         <button className="button">
             <span className="button-content">
-              <a href={cv}>Descargar CV</a>{" "}
+              <a href={cv}>Download CV</a>{" "}
             </span>
           </button>
       </div>
