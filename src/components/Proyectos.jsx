@@ -1,6 +1,6 @@
 import React from "react";
 import bolsillo from "../Img/bolsillo.png";
-import paises from "../Img/paises.png";
+import paises from "../Img/ort.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tecnologias from "./Tecnologias";
@@ -25,7 +25,7 @@ const Proyectos = () => {
             </div>
           </a>
           <a
-            href="https://www.youtube.com/watch?v=R_cjEpVWbcs&ab_channel=JuanLofredo"
+            href="https://muvinai-lofredo-fk0j5za5j-juanbalofredo.vercel.app/home"
             target="blank"
           >
             <div className="paises">

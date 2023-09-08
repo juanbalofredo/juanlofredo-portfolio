@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import cara from "../Img/quesopapo2.png"
 import Typed from "typed.js";
-import flecha from '../Img/32195.png'
+
 import flechab from '../Img/nalcnasas.png'
 const Home = () => {
   AOS.init({

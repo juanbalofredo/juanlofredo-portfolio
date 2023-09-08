@@ -6,7 +6,7 @@ import About from "./About";
 import BurguerButton from "./BurguerButton";
 import { Analytics } from "@vercel/analytics/react";
 import Proyectos from "./Proyectos";
-import foto1 from "../Img/4.png";
+
 import foto2 from "../Img/1.png";
 
 const Appp = () => {

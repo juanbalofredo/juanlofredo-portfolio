@@ -433,12 +433,12 @@ input:checked + .slider1:before {
 .proyes .paises div {
   z-index: -1;
   height: 10vw;
-  width: 25vw;
+  width: 23vw;
   background-color: #1b2e41;
   position: relative;
-  right: 40px;
+  right: 30px;
   transition: 1s;
-  transform: translateX(-256px);
+  transform: translateX(-16vw);
   visibility: hidden;
 }
 .proyes .paises {
@@ -481,13 +481,13 @@ input:checked + .slider1:before {
   display: flex;
   flex-direction: column;
   color: black;
-  width: 25vw;
+  width: 23vw;
   height: 10vw;
   background-color: #f8e6e8;
   position: relative;
   left: 40px;
   transition: 1s;
-  transform: translateX(256px);
+  transform: translateX(16vw);
   visibility: hidden;
 }
 .proyes a {

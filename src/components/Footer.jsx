@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   var fecha = new Date();
   var ano = fecha.getFullYear();
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
     <>
       <div className="footer-cont">
